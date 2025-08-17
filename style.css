@@ -80,7 +80,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/main.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./main.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -144,7 +144,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../img/about.jpeg) no-repeat center center/cover fixed;
+    background: url(./about.jpeg) no-repeat center center/cover fixed;
 }
 
 .about div div {
@@ -393,4 +393,5 @@ footer {
     font-size: 18px;
     position: relative;
     right: 150%;
+
 }
