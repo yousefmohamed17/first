@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* nav */
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: #000000e3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.text {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav h1 {
+    color: #fff;
+    font-size: 30px;
+}
+
+nav h1 span {
+    color: #47a92f;
+}
+
+nav ul {
+    width: 40%;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    position: relative;
+    top: 4px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li a:hover {
+    color: #47a92f;
+}
+
+nav div button {
+    color: #47a92f;
+    background-color: transparent;
+    padding: 5px 10px;
+    border: none;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav div button i {
+    padding-right: 10px;
+}
+
+nav div button:hover {
+    color: #fff;
+}
+
+/* main */
+
+main {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/main.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main-section {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.main-section h1 {
+    font-size: 100px;
+}
+
+.main-section p {
+    font-size: 30px;
+}
+
+.main-section button {
+    background-color: #47a92f;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.main-section button:hover {
+    color: #ffffff;
+}
+
+.fixed-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.fixed-button button {
+    background-color: #47a92f;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.fixed-button button:hover {
+    color: #ffffff;
+}
+
+/* about */
+
+.about {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/about.jpeg) no-repeat center center/cover fixed;
+}
+
+.about div div {
+    width: 40%;
+    height: 70vh;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    padding: 50px;
+    gap: 20px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+/* community */
+
+.community {
+    width: 100%;
+    height: 60vh;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.community div.up {
+    width: 80%;
+    text-align: center;
+    height: 50%;
+    padding: auto;
+    margin: 50px auto;
+}
+
+.community div.up h1 {
+    font-size: 70px;
+    color: #000000;
+}
+
+.community div.pic img {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+}
+
+.community div.pic img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* space */
+.spaces {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.spaces h1 {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #47a92f;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.space-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.space-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.space-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s;
+}
+
+.space-item:hover img {
+    transform: scale(1.1)
+}
+
+.space-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.41);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.space-item:hover .space-info {
+    opacity: 1;
+}
+
+/* Membership  */
+
+.membership {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.membership h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.membership p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.feature {
+    text-align: center;
+}
+
+.feature i {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #47a92f;
+}
+
+.feature p {
+    font-size: 15px;
+    color: #000000;
+}
+
+/* Contact  */
+
+.contact {
+    width: 100%;
+    height: 40vh;
+    background: url(../img/contact.jpeg) center center/cover no-repeat fixed;
+    position: relative;
+    color: #fff;
+}
+
+.contact .overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.contact p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.contact form {
+    margin-top: 20px;
+}
+
+.contact input {
+    padding: 12px;
+    width: 70%;
+    max-width: 400px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.contact button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background: #47a92f;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact button:hover {
+    background: #388d25;
+}
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 70px;
+    background: #333;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-container p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+
+}
+
+.social-icons a {
+
+    margin: 0 8px;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    right: 150%;
+}
