@@ -80,7 +80,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(main.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("main.jpeg");
     background-size: cover;
     background-position: center;
 }
@@ -395,4 +395,5 @@ footer {
     right: 150%;
 
 }
+
 
